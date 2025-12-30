@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <Type Name="uuidv7::uuidv7">
+    <DisplayString>{uuid_string,s}</DisplayString>
+    <Expand>
+      <Item Name="UUID">{uuid_string,s}</Item>
+      <Item Name="Timestamp">{timestamp_string,s}</Item>
+      <Item Name="rand_a">{rand_a}</Item>
+    </Expand>
+  </Type>
+</AutoVisualizer>
