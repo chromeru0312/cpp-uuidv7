@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <Type Name="uuidv7::uuidv7">
+    <Intrinsic Name="toString" Expression="(short)(data_[index]&lt;&lt;8|data_[index+1])">
+      <Parameter Name="index" Type="int"/>
+    </Intrinsic>
+    <DisplayString>"{toString(0),xb}{toString(2),xb}-{toString(4),xb}-{toString(6),xb}-{toString(8),xb}-{toString(10),xb}{toString(12),xb}{toString(14),xb}"</DisplayString>
+  </Type>
+</AutoVisualizer>
