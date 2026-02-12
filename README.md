@@ -1,4 +1,4 @@
-# cpp-uuidv7: C++17 UUIDv7 Library
+# cpp-uuidv7
 
 cpp-uuidv7 is a header-only C++ library for generating and parsing UUID Version 7.
 
@@ -47,11 +47,11 @@ Build using CMake.
 
 ### Build Options
 
-The following CMake options can be set to customize the build:
+The following CMake options can be set to customize the build.
 
 | Option | Default | Description |
 |--------|---------|-------------|
-| `UUIDV7LIB_FORCE_NATIVE` | `OFF` | Force the use of native CSPRNG instead of OpenSSL. |
+| `UUIDV7LIB_FORCE_NATIVE` | `OFF` | Force the use of native CSPRNG. |
 | `UUIDV7LIB_BUILD_TEST` | `OFF` | Build unit tests. |
 | `UUIDV7LIB_BUILD_DOCS` | `OFF` | Build documentation. |
 
@@ -60,7 +60,7 @@ The following CMake options can be set to customize the build:
 
 ## Library Usage
 
-### Generating a UUIDv7
+### Generating a UUID
 
 ```cpp
 #include <uuidv7/uuidv7.hpp>
@@ -70,7 +70,7 @@ The following CMake options can be set to customize the build:
 #include <string>
 
 int main() {
-    // Generate a UUIDv7
+    // Generate a UUID
     uuidv7::uuidv7_generator generator;
     uuidv7::uuidv7 id1 = generator.generate();
 
@@ -84,7 +84,7 @@ int main() {
 }
 ```
 
-### Parsing a UUIDv7 String
+### Parsing a UUID string
 
 ```cpp
 #include <uuidv7/uuidv7.hpp>
